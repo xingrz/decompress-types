@@ -1,11 +1,11 @@
 import { Readable } from 'stream';
 
 export interface File {
-  data: Buffer;
+  path: string;
+  type: 'file' | 'link' | 'symlink' | 'directory';
   mode: number;
   mtime: Date | string;
-  path: string;
-  type: string;
+  data?: Buffer;
   linkname?: string;
 }
 
