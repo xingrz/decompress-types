@@ -1,0 +1,16 @@
+{
+  "name": "@xingrz/decompress-types",
+  "version": "1.0.0",
+  "description": "TypeScript declarations for @xingrz/decompress and plugins",
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xingrz/decompress-types.git"
+  },
+  "author": "XiNGRZ <hi@xingrz.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xingrz/decompress-types/issues"
+  },
+  "homepage": "https://github.com/xingrz/decompress-types#readme"
+}
