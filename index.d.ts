@@ -9,4 +9,10 @@ export interface File {
   linkname?: string;
 }
 
-export type DecompressPlugin<Options> = (input: Buffer | Readable, opts?: Options) => Promise<File[]>;
+export type DecompressFileWriter = (file: File, input: Readable) => Promise<void>;
+
+export interface DecompressPluginOptions {
+  fileWriter?: DecompressFileWriter;
+}
+
+export type DecompressPlugin<Options extends DecompressPluginOptions> = (input: Buffer | Readable, opts?: Options) => Promise<File[]>;
