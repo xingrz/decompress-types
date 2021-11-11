@@ -9,4 +9,4 @@ export interface File {
   linkname?: string;
 }
 
-export type DecompressPlugin = (input: Buffer | Readable, opts?: Object) => Promise<File[]>;
+export type DecompressPlugin<Options> = (input: Buffer | Readable, opts?: Options) => Promise<File[]>;

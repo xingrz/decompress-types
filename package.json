@@ -1,6 +1,6 @@
 {
   "name": "@xingrz/decompress-types",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "TypeScript declarations for @xingrz/decompress and plugins",
   "types": "index.d.ts",
   "repository": {
