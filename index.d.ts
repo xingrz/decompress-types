@@ -15,4 +15,4 @@ export interface DecompressPluginOptions {
   fileWriter?: DecompressFileWriter;
 }
 
-export type DecompressPlugin<Options extends DecompressPluginOptions> = (input: Buffer | Readable, opts?: Options) => Promise<File[]>;
+export type DecompressPlugin<Options extends DecompressPluginOptions | void> = (input: Buffer | Readable, opts?: Options) => Promise<File[]>;
