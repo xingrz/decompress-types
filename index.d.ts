@@ -9,7 +9,7 @@ export interface File {
   linkname?: string;
 }
 
-export type DecompressFileWriter = (file: File, input: Readable) => Promise<void>;
+export type DecompressFileWriter = (file: File, input?: Readable) => Promise<void>;
 
 export interface DecompressPluginOptions {
   fileWriter?: DecompressFileWriter;
